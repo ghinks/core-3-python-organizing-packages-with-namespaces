@@ -23,7 +23,9 @@ extension_map = {
 
 class MultiReader:
     def __init__(self, filename):
-        print(extension_map)
+        """following 2 lines for debug only"""
+        myModules = [m for _,m,_ in pkgutil.iter_modules(demo_reader.compressed.__path__)]
+        print(myModules)
         extension = os.path.splitext(filename)[1]
         opener = extension_map.get(extension, open)
         self.f = opener(filename, 'rt')
