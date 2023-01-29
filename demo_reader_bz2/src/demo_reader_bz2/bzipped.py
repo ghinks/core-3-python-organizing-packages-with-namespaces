@@ -1,5 +1,6 @@
 import bz2
-from ..util import writer
+
+from demo_reader.util import writer
 
 extension = '.bz2'
 opener = bz2.open

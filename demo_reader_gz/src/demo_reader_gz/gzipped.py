@@ -1,6 +1,6 @@
 import gzip
 
-from ..util import writer
+from demo_reader.util import writer
 
 extension = '.gz'
 opener = gzip.open
